@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+          <link rel="stylesheet" href="../Styles/termsandconditions.css">
+      <link rel="stylesheet" href="../Styles/header.css">
+  <link rel="stylesheet" href="../Styles/footer.css">
+  <link rel="stylesheet" href="../Styles/contactus.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+   <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="/favicon_io/site.webmanifest">
+<link rel="mask-icon" href="/favicon_io/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/favicon_io/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/favicon_io/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+</head>
+<body>
+      <header class="header">
+        <div class="logo">
+            <a href="../index.html"><img src="/images/TAMSA_LOGO_1__page-0001-removebg-preview.png" alt="TAMSA Integrated Logo"></a>
+            
+        </div>
+        
+        <nav>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="ourgallery.html">Gallery</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="career.html">Careers</a></li>
+                
+                
+            </ul>
+        </nav>
+
+      
+        
+        <div class="social-icons">
+  <a href="https://wa.me/919703510709?text=Hi%20Tamsa%2C%20I%E2%80%99m%20interested%20in%20your%20event%20management%20services.%20Could%20we%20connect%20to%20discuss%20more%20details%3F" class="whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="https://www.instagram.com/tamsaintegrated/" class="instagram" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.youtube.com/@tamsaintegrated" class="youtube" target="_blank">
+    <i class="fab fa-youtube"></i>
+  </a>
+  <a href="https://www.linkedin.com/company/tamsa-events/" class="linkedin" target="_blank">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+  <a href="https://www.facebook.com/TamsaIntegrated?mibextid=LQQJ4d" class="facebook" target="_blank">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+</div>
+
+        
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+
+    <!-- <div class="hero-container">
+       
+        <div class="background-image"></div>
+        
+        
+        <div class="overlay"></div>
+        
+        
+        <div class="hero-text">
+            <h1>Contact us</h1>
+        </div>
+    </div> -->
+
+  <div class="enquire-container">
+        <div class="left-side">
+            <h2>Ready to elevate <br>
+               your <span class="highlight">brand</span> <i>to</i>  <br>the next level?</h2>
+            <p>We’re here to amplify your vision. Let’s be growth partners.</p>
+            <form id="enquiryForm">
+
+
+                <input type="text" name="Name" placeholder="Name*" required>
+                <input type="email" name="email"  placeholder="Email*" required>
+                <input type="tel" name="Phone" placeholder="Phone Number*" required>
+                <input type="text" name="Company Name" placeholder="Company Name*" required>
+                <input type="text" name="venue" placeholder="Venue*" required>
+                <input type="text" id="event-date" placeholder="Select Event Date*" required>
+
+                
+                <label style="font-size: 30px;">Services Required</label>
+                <input type="hidden" name="Services" id="selectedServices">
+
+              <div class="services">
+                <button type="button" onclick="selectService(this, 'Set & Decor for Events')">Set & Decor for Events</button>
+                <button type="button" onclick="selectService(this, 'Exhibitions & Trade Shows')">Exhibitions & Trade Shows</button>
+                <button type="button" onclick="selectService(this, 'Stall design and execution')">Stall design and execution</button>
+                <button type="button" onclick="selectService(this, 'Kiosk for Promotions')">Kiosk for Promotions</button>
+                <button type="button" onclick="selectService(this, 'Product Launches')">Product Launches</button>
+                <button type="button" onclick="selectService(this, 'Conferences')">Conferences</button>
+                <button type="button" onclick="selectService(this, 'Dealers Meet')">Dealers Meet</button>
+                <button type="button" onclick="selectService(this, 'Corporate Events')">Corporate Events</button>
+                <button type="button" onclick="selectService(this, 'Fabrication & Production')">Fabrication & Production</button>
+                <button type="button" onclick="selectService(this, 'Others')">Others</button>
+
+            </div>
+
+                <textarea name="Message" placeholder="Share your event details, and let’s create something unforgettable!" required></textarea>
+                <input type="hidden" name="_template" value="table">
+             
+                
+
+
+                <input type="hidden" name="_captcha" value="false">
+
+                
+
+                <button class="submit-btn">Get Started</button>
+            </form>
+        </div>
+        <div class="right-side">
+                <img class="right-image" src="../images/Contact Us/Event.jpg" alt="Event Management">
+                <img class="right-image" src="../images/Contact us/Exhibition.jpg" alt="Exhibition">
+                <img class="right-image" src="../images/Contact us/Kiosk.jpeg" alt="Kiosk">
+        </div>
+
+    </div>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+<script>
+  flatpickr("#event-date", {
+    minDate: "today",
+    dateFormat: "Y-m-d",
+  });
+</script>
+
+
+     <footer class="footer">
+  <div class="footer-main">
+      <!-- Quick Links Column -->
+      <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="fromthedeskofCEO.html">From the Desk of the CEO</a></li>
+              <li><a href="lifeattamsa.html">Life at Tamsa</a></li>
+              <li><a href="career.html">Careers at Tamsa</a></li>
+              <li><a href="../Portfolio PDF/Tamsa Portfolio PDF.pdf" download="Tamsa_Portfolio.pdf">Our Portfolio</a></li>
+              <li><a href="#">Blogs</a></li>
+          </ul>
+      </div>
+
+      <!-- Services Column -->
+      <div class="footer-column">
+          <h3>Our Services</h3>
+          <ul>
+              <li><a href="services.html?scrollTo=exhibition">Exhibition</a></li>
+              <li><a href="services.html?scrollTo=event">Event</a></li>
+              <li><a href="services.html?scrollTo=kiosk">Kiosk</a></li>
+              <li><a href="services.html?scrollTo=decor">Decor</a></li>
+              <li><a href="services.html?scrollTo=production">In-House Production</a></li>
+          </ul>
+      </div>
+
+      <!-- Location Column -->
+      <div class="footer-column">
+          <h3>Our Location</h3>
+          <div class="footer-location">
+            <p class="location-header"><strong>Office Location</strong></p>
+            <a href="https://www.google.com/maps/place/17%C2%B028'16.1%22N+78%C2%B022'36.3%22E/@17.4711389,78.37675,836m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d17.4711389!4d78.37675?hl=en&entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
+              <p>HITEX Exhibition Center Izzat Nagar Hyderabad, 102, First Floor, Trade Fair Office building, 500 084, Telangana India</p>
+            </a>          
+
+          </div>
+
+
+          <div class="footer-location">
+              <p class="location-header"><strong>Warehouse Location</strong></p>
+            <a href="https://www.google.com/maps/place/Tamsa+Exhibition+Services/@17.3333472,78.3324356,990m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bcb9534b8acb329:0xc35bbc621f3d1f27!8m2!3d17.3333472!4d78.3324356!16s%2Fg%2F11lng44frq?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
+              <p>Tamsa Exhibition Services next to VVR farm house, Aziznagar, Telangana 500075</p>
+            </a>           
+
+          </div>         
+          
+      </div>
+
+      <!-- Contact Column -->
+      <div class="footer-column">
+          <h3>Contact</h3>
+          <div class="footer-contact">
+            <a href="mailto:ali@tamsaims.com">
+                  <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                  ali@tamsaims.com
+              </a>
+
+              <a href="mailto:indu@tamsaims.com">
+                  <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                  indu@tamsaims.com
+              </a>
+              <a href="mailto:marketing@tamsaims.com">
+                  <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                  marketing@tamsaims.com
+              </a>
+              <a href="tel:+919703510709">
+                  <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                  </svg>
+                  +91 9703510709
+              </a>
+              <a href="tel:+919030632222">
+                  <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                  </svg>
+                  +91 9030632222
+              </a>
+
+
+              <a href="tel:+919581606783">
+                  <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                  </svg>
+                  +91 9581606783
+              </a>
+
+
+              <div class="footer-social-icons">
+                <a href="https://wa.me/919703510709?text=Hi%20Tamsa%2C%20I%E2%80%99m%20interested%20in%20your%20event%20management%20services.%20Could%20we%20connect%20to%20discuss%20more%20details%3F" target="_blank">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/tamsaintegrated/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@tamsaintegrated" target="_blank">
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/tamsa-events/" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/TamsaIntegrated?mibextid=LQQJ4d" target="_blank">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+
+  <!-- Bottom Footer -->
+  <div class="footer-bottom">
+      <div class="footer-nav">
+          <a href="aboutus.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="ourgallery.html">Gallery</a>
+          <a href="contactus.html">Contact</a>
+          
+      </div>
+      <div class="footer-legal">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="termsandcondition.html">Terms & Conditions</a>
+      </div>
+      <div class="footer-copyright">
+          &copy;Copyright 2025, Tamsa All Rights Reserved
+      </div>
+  </div>
+</footer>
+
+<script src="../Scripts/contactus.js"></script>
+<script src="../Scripts/script.js"></script>
+<script>
+  const form = document.getElementById("enquiryForm");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+    data.eventDate = document.getElementById("event-date").value;
+
+    try {
+      const res = await fetch("http://localhost:3000/api/send-enquiry", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await res.json();
+      alert(result.message || "Submitted successfully!");
+
+      // Reset form inputs
+      form.reset();
+
+      // Clear the hidden input that stores selected services
+      document.getElementById("selectedServices").value = "";
+
+      // Remove the 'selected' class from all service buttons to visually reset them
+      document.querySelectorAll(".services button.selected").forEach(btn => btn.classList.remove("selected"));
+
+    } catch (err) {
+      alert("Error sending enquiry. Try again.");
+    }
+  });
+
+  function selectService(button, service) {
+    // Toggle the selected class to highlight/unhighlight the button
+    button.classList.toggle("selected");
+
+    // Gather all selected services
+    const selected = Array.from(document.querySelectorAll(".services button.selected")).map(
+      (btn) => btn.textContent
+    );
+
+    // Update the hidden input value to reflect currently selected services
+    document.getElementById("selectedServices").value = selected.join(", ");
+  }
+</script>
+
+</body>
+</html>
