@@ -42,7 +42,9 @@ app.post("/api/send-enquiry", async (req, res) => {
   html: `
     <div style="font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px;">
       <div style="max-width: 700px; margin: auto; background: #ffffff; border-radius: 8px; padding: 30px;">
-       
+        <div style="text-align: center;">
+          <img src="https://i.postimg.cc/br2rRWTV/Tamsa-Logo.jpg" alt="Tamsa IMS Logo" style="max-width: 150px; margin-bottom: 20px;">
+        </div>
         <h2 style="color: #333;">New Enquiry Received</h2>
         <p style="font-size: 15px; color: #555;">You’ve received a new event enquiry from your website. Here are the details:</p>
         
@@ -103,7 +105,7 @@ app.post("/api/send-enquiry", async (req, res) => {
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border-radius: 10px; background: #f9f9f9;">
           <div style="text-align: center; margin-bottom: 20px;">
-            <img src="https://i.postimg.cc/h4ZkBQjM/TAMSA-LOGO-1-page-0001-removebg-preview.png" alt="Tamsa IMS Logo" style="max-width: 150px;">
+            <img src="https://i.postimg.cc/br2rRWTV/Tamsa-Logo.jpg" alt="Tamsa Logo" style="max-width: 150px;">
           </div>
           <h2 style="color: #333;">Hi ${Name},</h2>
           <p style="font-size: 16px; color: #555;">
